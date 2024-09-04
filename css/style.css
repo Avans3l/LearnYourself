@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     height:100vh;
     background-image: url('../images/background.jpg');
     background-size:cover;
@@ -29,14 +29,15 @@ body::before{
     z-index: -1;
 }
 
-h1{
-    font-size: 75px;
+.hero{
+    font-size: 40px;
     font-weight:800;
     text-align:center;
     padding-top:30vh;
+    padding-bottom:14vw;
 }
 
-.pMain{
+.hero p{
     line-height: 35px;
     font-size: 25px;
     font-weight: 200;
@@ -44,15 +45,10 @@ h1{
     padding-top:5vh;
 }
 
-body {
-	background-color: #282828;
-}
-
-body{background-color:#000; overflow:hidden;}
 
 .scroll-down {
   position: absolute;
-  bottom: 20px;
+  bottom: 45px;
   display: block;
   text-align: center;
   z-index: 100;
@@ -90,3 +86,26 @@ body{background-color:#000; overflow:hidden;}
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 } */
+
+.container .white{
+  background-color: #f0f0f0;
+  height:100vh;
+}
+
+.hero-info {
+  font-size: 30px;
+  font-weight:300;
+  color:black;
+  line-height: 45px;
+  padding-top:30vh;
+  padding-bottom:30vh;
+}
+
+.hero-info p {
+text-align:center;
+}
+
+.indents{
+  padding-left: 15vw;
+  padding-right:10vw;
+}

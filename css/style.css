@@ -87,7 +87,8 @@ body::before{
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 } */
 
-.container .white{
+/* страницаДляЗаметок */
+/* .container .white{
   background-color: #f0f0f0;
   height:100vh;
 }
@@ -108,4 +109,78 @@ text-align:center;
 .indents{
   padding-left: 15vw;
   padding-right:10vw;
+} */
+/* страницаДляЗаметок */
+
+.container-white{
+  background-color: #ffffff;
+  height:100vh;
+}
+
+.hero-question{
+  font-size: 35px;
+  line-height: 1.35;
+  font-weight: 300;
+  color:#000;
+  text-align:center;
+  padding-top:25vh;
+  padding-bottom:30vh;
+}
+
+.indents{
+  padding-left: 15vw;
+  padding-right:10vw;
+}
+
+.line{
+  margin:10vh;
+  width:10vw;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid #000;
+}
+
+.container-grey{
+  background-color: #f0f0f0;
+  height:100vh;
+}
+
+.hero-parts h1{
+  color:#000;
+  text-align:center;
+  font-size:40px;
+  padding-top:10vh;
+  padding-bottom:10vh;
+}
+
+.parts ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10vh;
+  column-gap:20vw;
+}
+
+.parts li{
+  list-style-type:none;
+}
+
+
+
+.parts li img{
+  width:8vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parts p{
+  color:#000;
+  text-align: center;
+
+
+}
+
+.parts figcaption{
+  text-align: center;
+  font-size:3px;
 }

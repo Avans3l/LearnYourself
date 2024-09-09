@@ -5,6 +5,11 @@
     padding:0;
     box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+}
+
 body{
     font-family: 'Roboto', Arial, sans-serif;
     height:100vh;
@@ -142,7 +147,7 @@ text-align:center;
 
 .container-grey{
   background-color: #f0f0f0;
-  height:500vh;
+  height:735vh;
 }
 
 .indents{
@@ -207,4 +212,15 @@ white-space: normal;
 
 #inlineWord{
   white-space: nowrap;
+}
+
+footer img{
+  width:3vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ft-linx a{
+  text-align: center;
 }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn yourself</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="dist/css/lightbox.css">
-    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/script.js"></script> -->
 </head>
 <body>
+  <header></header>
   <div class="container">
     <div class="hero">
     <h1>Learn Yourself</h1>
@@ -49,64 +49,76 @@
         <div class="parts">
           <ul>
             <li>
-            <a href="images/actions-icon.png" data-lightbox="hero-icon">
-            <a href="images/library-icon.png" data-lightbox="hero-icon">
-            <img src="images/career-icon.png" alt="Career"></a>
+          <figure>
+           <div class="hover-image"> <img src="images/career-icon.svg" class="main_icon" alt="Career">
+           <div class="flip">
+            <div class="placeAandL">
+            <img src="images/actions-icon.png" class="actionslibrary" id="actions" alt="actions">
+            <img src="images/library-icon.png" class="actionslibrary" id="library" alt="library">
+          </div>
+          <div class="placeRandT">
+            <img src="images/roadmap-icon.png" class="roadmaptracking" id="roadmap" alt="roadmap">
+            <img src="images/tracking-icon.png" class="roadmaptracking" id="tracking" alt="tracking">
+          </div>
+        </div>
+          </div>
            <figcaption>Career</figcaption>
+          </figure>
             <p class="description">What are you working on?</p>
             </li>
+
             <li>
-            <img src="images/studying-cion.png" alt="Studying">
+              <img src="images/studying-cion.png"  class="main_icon" alt="Studying">
             <figcaption>Studying</figcaption>
             <p class="description">What are you studying to?</p>
             </li>
             <li>
-            <img src="images/bussines-icon.png" alt="Business">
+            <img src="images/bussines-icon.png" class="main_icon" alt="Business">
             <figcaption>Business</figcaption>
             <p class="description">Which processes are you managing?</p>
             </li>
             <li>
-            <img src="images/self-improvement-icon.png" alt="Self-Improvement">
+            <img src="images/self-improvement-icon.png"  class="main_icon" alt="Self-Improvement">
             <figcaption>Self-Improvement</figcaption>
             <p class="description">How are you getting better?</p>
             </li>
             <li>
-            <img src="images/music-icon-colorful.png" alt="Music">
+            <img src="images/music-icon-colorful.png" class="main_icon"  alt="Music">
             <figcaption>Music</figcaption>
             <p class="description">Which projects are you implementing?</p>
             </li>
             <li>
-            <img src="images/sport-icon.png" alt="Sport">
+            <img src="images/sport-icon.png" class="main_icon" alt="Sport">
             <figcaption>Sport</figcaption>
             <p class="description">Which goals do you have here?</p>
             </li>
             <li>
-            <img src="images/entertainment-icon.jpg" alt="Entertainment">
+            <img src="images/entertainment-icon.jpg" class="main_icon" alt="Entertainment">
             <figcaption>Entertainment</figcaption>
             <p class="description">How are you chilling?:)</p>
             </li>
             <li>
-            <img src="images/relationship-icon.png" alt="Relationship">
+            <img src="images/relationship-icon.png" class="main_icon" alt="Relationship">
             <figcaption>Relationship</figcaption>
             <p class="description">Who are you sharing your life to?</p>
             </li>
             <li>
-              <img src="images/blogging-icon.png" alt="Blogging">
+              <img src="images/blogging-icon.png" class="main_icon" alt="Blogging">
               <figcaption>Blogging</figcaption>
               <p class="description">What are you sharing with the world?</p>
             </li>
             <li>
-              <img src="images/people-icon.png" alt="People">
+              <img src="images/people-icon.png" class="main_icon" alt="People">
               <figcaption>People</figcaption>
               <p class="description">Who are your boys and girls? 😎</p>
           </li>
             <li>
-              <img src="images/other-hobbies-icon.png" alt="Other hobbies">
+              <img src="images/other-hobbies-icon.png" class="main_icon" alt="Other hobbies">
               <figcaption>Other Hobbies</figcaption>
               <p class="description">What are you even else?</p>
           </li>
             <li>
-              <img src="images/something-else-icon.png" alt="Something else?">
+              <img src="images/something-else-icon.png" class="main_icon" alt="Something else?">
               <figcaption>Something else?</figcaption>
               <p class="description">Don't ignore the part of your personality <br> and feel free to add it :)</p>
           </li>
@@ -121,57 +133,57 @@
         <div class="parts">
           <ul>
             <li>
-              <img src="images/goals&plans-icon.svg" alt="Goals & Plans">
+              <img src="images/goals&plans-icon.svg" class="main_icon" alt="Goals & Plans">
               <figcaption>Goals & Plans</figcaption>
               <p class="description">Be honest, think big and visualize your success</p>
             </li>
             <li>
-              <img src="images/habits&routines-icon.svg" alt="Habits & Routines">
+              <img src="images/habits&routines-icon.svg" class="main_icon" alt="Habits & Routines">
               <figcaption id="inlineWord">Habits & Routines</figcaption>
               <p class="description">Everyday activities and sequences of activities (with fixing time or not)</p>
             </li>
             <li>
-              <img src="images/finance-icon.svg" alt="Finance">
+              <img src="images/finance-icon.svg" class="main_icon" alt="Finance">
               <figcaption>Finance</figcaption>
               <p class="description">Self-assistant, tables, integration with buy history*, customer behavior visualization</p>
             </li>
             <li>
-              <img src="images/dreams-icon.svg" alt="Dreams">
+              <img src="images/dreams-icon.svg" class="main_icon" alt="Dreams">
               <figcaption>Dreams</figcaption>
               <p class="description">Let yourself be frank and just dream a bit. It's funny!</p>
             </li>
             <li>
-              <img src="images/health-icon.svg" alt="Health">
+              <img src="images/health-icon.svg" class="main_icon" alt="Health">
               <figcaption>Health</figcaption>
               <p class="description">Self-care, diagnostics plan, analysis and doctor-visiting reminders, plans and financial goals</p>
             </li>
             <li>
-              <img src="images/nutrition-icon.svg" alt="Nutrition">
+              <img src="images/nutrition-icon.svg" class="main_icon" alt="Nutrition">
               <figcaption>Nutrition</figcaption>
               <p class="description">Programs, reminders, calories counter*, favorite and desirable places to eat</p>
             </li>
             <li>
-              <img src="images/schedule-icon.svg" alt="Schedule">
+              <img src="images/schedule-icon.svg" class="main_icon" alt="Schedule">
               <figcaption>Schedule</figcaption>
               <p class="description">Your own smart calendar, reminders, life-modeling constructor and assistant</p>
             </li>
             <li>
-              <img src="images/responsibilites-icon.svg" alt="Responsibilities">
+              <img src="images/responsibilites-icon.svg" class="main_icon" alt="Responsibilities">
               <figcaption>Responsibilities</figcaption>
               <p class="description">Your compulsory stuff, advices, network</p>
             </li>
             <li>
-              <img src="images/expriences-icon.svg" alt="Experiences">
+              <img src="images/expriences-icon.svg" class="main_icon" alt="Experiences">
               <figcaption>Experiences</figcaption>
               <p class="description">Authentic moments, new experiences, every motional and emotional activity that passed or coming</p>
             </li>
             <li>
-              <img src="images/needs-cion.svg" alt="Needs">
+              <img src="images/needs-cion.svg" class="main_icon" alt="Needs">
               <figcaption>Needs</figcaption>
               <p class="description">What do you actually need in life?</p>
             </li>
             <li>
-              <img src="images/values-icon.svg" alt="Values">
+              <img src="images/values-icon.svg" class="main_icon" alt="Values">
               <figcaption>Values</figcaption>
               <p class="description">What do you actually appreciate in life?</p>
             </li>
@@ -192,52 +204,52 @@
               <p class="description">Your place to store books that you've read or just are going to begin, integration with books services*, recommendation system</p>
             </li>
             <li>
-              <img src="images/films&series-icon.svg" alt="Films & Series">
+              <img src="images/films&series-icon.svg" class="main_icon" alt="Films & Series">
               <figcaption id="inlineWord">Films & Series</figcaption>
               <p class="description">Your place to store movies that you've seen or just are going to begin, integration with film services*, recommendation system</p>
             </li>
             <li>
-              <img src="images/music-icon.svg" alt="Music">
+              <img src="images/music-icon.svg" class="main_icon" alt="Music">
               <figcaption>Music</figcaption>
               <p class="description">Your place to store songs/albums/artists that you've listened to or just are going to, integration with music services*, recommendation system</p>
             </li>
             <li>
-              <img src="images/recipes-cion.svg" alt="Recipes">
+              <img src="images/recipes-cion.svg" class="main_icon" alt="Recipes">
               <figcaption>Recipes</figcaption>
               <p class="description">Your own secrets to make meals :) Library, network</p>
             </li>
             <li>
-              <img src="images/notes-icon.svg" alt="Notes">
+              <img src="images/notes-icon.svg" class="main_icon" alt="Notes">
               <figcaption>Notes</figcaption>
               <p class="description">To notice something around you :)</p>
             </li>
             <li>
-              <img src="images/places-icon.svg" alt="Places">
+              <img src="images/places-icon.svg" class="main_icon" alt="Places">
               <figcaption>Places</figcaption>
               <p class="description">Store places you'd like to visit or discover, plan trips, integration with trip ideas services*</p>
             </li>
             <li>
-              <img src="images/content-icon.svg" alt="Content">
+              <img src="images/content-icon.svg" class="main_icon" alt="Content">
               <figcaption>Content</figcaption>
               <p class="description">Some content to learn or entertain at spare time (channels, podcasts, influencers), recommendation system</p>
             </li>
             <li>
-              <img src="images/other-materials-icon.svg" alt="Other Materials">
+              <img src="images/other-materials-icon.svg" class="main_icon" alt="Other Materials">
               <figcaption>Other Materials</figcaption>
               <p class="description">Smth else you'd like to go through!</p>
             </li>
             <li>
-              <img src="images/lifehacks-icon.svg" alt="Lifehacks">
+              <img src="images/lifehacks-icon.svg" class="main_icon" alt="Lifehacks">
               <figcaption>Lifehacks</figcaption>
               <p class="description">Your own ways to a act wiser</p>
             </li>
             <li>
-              <img src="images/gallery-icon.svg" alt="Gallery">
+              <img src="images/gallery-icon.svg" class="main_icon" alt="Gallery">
               <figcaption>Gallery</figcaption>
               <p class="description">It's literally you doing things! Looks like smbd captured it. Nice! Integration with gallery</p>
             </li>
             <li>
-              <img src="images/ideas-icon.svg" alt="Ideas">
+              <img src="images/ideas-icon.svg" class="main_icon" alt="Ideas">
               <figcaption>Ideas</figcaption>
               <p class="description">Create & Implement</p>
             </li>
@@ -255,7 +267,5 @@
   <a href="">Instagram</a>
   <a href="">Discord</a>
 </footer>
-</div>
-
 </body>
 </html>

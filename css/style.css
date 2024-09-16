@@ -10,10 +10,21 @@ a{
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* html, body {
+  max-width: 100%;
+
+} */
+
+
 body{
     font-family: 'Roboto', Arial, sans-serif;
-    height:100vh;
     background-image: url('../images/background.jpg');
+    height:100vh;
+    max-width:100%;
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -30,8 +41,8 @@ body::before{
     position: absolute;
     top:0;
     left:0;
+    height:100vh;
     width:100%;
-    height:100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
@@ -55,25 +66,20 @@ body::before{
 
 .scroll-down {
   position: absolute;
-  bottom: 45px;
   display: block;
-  text-align: center;
-  z-index: 100;
   text-decoration: none;
-  text-shadow: 0;
   width: 25px;
   height: 25px;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   border-radius: 1px;
-  z-index: 9;
+  /* z-index: 2; */
   left: 50%;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
   animation: arrow 1.8s infinite;
   animation-timing-function:linear
-
 }
 
 @keyframes arrow{
@@ -161,7 +167,7 @@ text-align:center;
   grid-template-columns: auto auto auto;
   column-gap: 10vw;
   row-gap: 10vh;
- 
+ max-width: 100%;
 }
 
 .parts li{
@@ -169,9 +175,14 @@ text-align:center;
 }
 
 
-.parts li img{
+.parts .main_icon{
   width:8vw;
   border-radius: 10px;
+}
+
+.hover-image{
+  width:8vw;
+margin: auto;
 }
 
 .hero-parts .parts .description{
@@ -179,8 +190,6 @@ text-align:center;
   color:#000000;
   white-space: nowrap;
 
-
-  
 }
 
 .parts figcaption{
@@ -233,3 +242,108 @@ footer img:hover{
 footer a:hover{
   opacity:1;
 }
+
+.parts{
+  position:relative;
+}
+
+
+.flip{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  z-index: 0;
+  width:0rem;
+  height:0rem;
+  position:absolute;
+  top: 1rem;
+  left:6.5rem;
+
+}
+
+
+
+.flip img{
+width:1rem;
+height:1rem;
+cursor: pointer;
+visibility: hidden;
+
+}
+
+/* .placeAandL{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1.5rem;
+} */
+
+/* .hover-image:hover .flip .actionslibrary {
+  position: relative;
+
+  width:3rem;
+  height: 3rem;
+  transform: translate(-30%, -360%);
+  transition:.5s cubic-bezier( 1, 1, 1, 1);
+}
+
+.hover-image:hover .flip .roadmaptracking{
+  position: relative;
+  width:3rem;
+  height: 3rem;
+  transform: translate(-105%, -340%);
+  transition:.5s cubic-bezier( 1, 1, 1, 1);
+} */
+
+.hover-image:hover .flip #actions{
+  position: relative;
+
+  width:3rem;
+  height: 3rem;
+  transform: translate(-70%, -200%);
+  transition:.25s cubic-bezier( 1, 1, 1, 1);
+  visibility:visible;
+}
+
+.hover-image:hover .flip #roadmap{
+  position: relative;
+
+  width:3rem;
+  height: 3rem;
+  transform: translate(-30%, -200%);
+  transition:.25s cubic-bezier( 1, 1, 1, 1);
+  visibility:visible;
+}
+
+.hover-image:hover .flip #library{
+  position: relative;
+
+  width:3rem;
+  height: 3rem;
+  transform: translate(-130%, -180%);
+  transition:.25s cubic-bezier( 1, 1, 1, 1);
+  visibility:visible;
+}
+
+
+.hover-image:hover .flip #tracking{
+  position: relative;
+
+  width:3rem;
+  height: 3rem;
+  transform: translate(30%, -180%);
+  transition:.25s cubic-bezier( 1, 1, 1, 1);
+  visibility:visible;
+}
+ 
+/* footer position:fixed */
+
+
+/* @media screen and (min-width:375px){
+
+
+  .parts ul{
+    grid-template-columns: 1fr;
+    row-gap: 10vh;
+  }
+
+
+} */

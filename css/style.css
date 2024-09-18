@@ -272,10 +272,10 @@ transition: 1s cubic-bezier(0.25, 0, 0, 1);
 :focus-within{ 
 position: absolute;
 border-radius: 3rem;
-background-color: aqua;
-opacity: 0.4;
-/* height:9em;
-width:17rem; */
+/* background-color: aqua;
+opacity: 0.4; */
+height:9rem;
+width:17rem;
 transform: translate(-5%, -60%);
 
 }
